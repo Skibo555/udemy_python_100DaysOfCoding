@@ -1,13 +1,13 @@
 # A welcome message
-print("Welcome to the number Guessing Game!")
+print("Welcome to the Number Guessing Game!")
 
 # The thought of the computer
-print("I'm thinking of a number in my head.")
+print("I'm thinking of a number between 1 and 100 in my head.")
 
 # import random module
 import random
 
-number_in_mind = random.randrange(0, 101)
+number_in_mind = random.randrange(1, 101)
 
 # Choose Difficulty level (Hard and Easy.. Esay has 10 Attempts and Hard has 5 attempts)
 def difficulty_level(level_chose):
@@ -39,7 +39,7 @@ while level > 0:
         print("Too high!")
         print("You have {} attempts left.".format(level))
     elif user_guess == number_in_mind:
-        print("You got it!")
+        print("You got it! The answer was {}.".format(number_in_mind))
         break
 
     ## if the user_guess is lower than the value that the computer has in mind:
